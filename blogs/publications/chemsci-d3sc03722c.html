@@ -103,6 +103,8 @@ feeds/publications.atom.xml"
         -->
         <link rel="stylesheet" href="../../theme/style.css">
 
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/styles/disqusjs.css">
+
         <!-- Google Analytics -->
 
         <!-- Google Global Site Tag -->
@@ -277,15 +279,18 @@ feeds/publications.atom.xml"
     <!-- Comments -->
         <hr>
 <div id="disqus_thread"></div>
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/disqusjs.es2015.umd.min.js"></script>
+
 <script type="text/javascript">
-    var disqus_shortname = 'qixuan-wang';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                </div>
+    const disqusjs = new DisqusJS({
+        shortname: 'qixuan-wang',
+        siteName: 'Qixuan Wang's Personal Page',
+        apikey: 'E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F',
+        admin: 'wangqixuan',
+        adminLabel: 'Administrator'
+    });
+    disqusjs.render('#disqus_thread');
+</script>                </div>
         </main>
 
 </div>
