@@ -278,21 +278,29 @@ feeds/publications.atom.xml"
 
     <!-- Comments -->
         <hr>
-<div id="disqusjs"></div>
-<script src="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/disqusjs.es2015.umd.min.js"></script>
-
+<div id="disqus_thread"></div>
 <script type="text/javascript">
-    const disqusjs = new DisqusJS({
+    var disqus_shortname = 'qixuan-wang';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- disqusjs start -->
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/disqusjs.es2015.umd.min.js"></script>
+<script>
+    var disqusjs = new DisqusJS({
         shortname: 'qixuan-wang',
-        siteName: "Qixuan Wang's Personal Page",
-        apikey: 'R11bM6yidbHTMav1OtK1tFnKuuUemqAQmZZJhmvKFshD01cuRb3vOUJGjGfAZGlu',
-        url: 'https://www.wangqixuan.cn/blogs/publications/chemsci-d3sc03722c.html',
-        api: 'https://disqus.skk.moe/disqus/',
+        siteName: 'Qixuan Wang's Personal Page',
+        apikey: 'E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F',
         admin: 'wangqixuan',
         adminLabel: 'Administrator'
     });
-    disqusjs.render('#disqusjs');
-</script>                </div>
+</script>
+<!-- disqusjs end -->                </div>
         </main>
 
 </div>
