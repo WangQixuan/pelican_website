@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Qixuan Wang's Personal Page - softwares</title><link href="https://www.wangqixuan.cn/" rel="alternate"/><link href="https://www.wangqixuan.cn/feeds/softwares.atom.xml" rel="self"/><id>https://www.wangqixuan.cn/</id><updated>2025-09-02T16:00:00+08:00</updated><subtitle>Qixuan Wang's Personal Page</subtitle><entry><title>PKU To Xmol Chrome Plugin</title><link href="https://www.wangqixuan.cn/blogs/softwares/pku_to_xmol.html" rel="alternate"/><published>2025-09-02T16:00:00+08:00</published><updated>2025-09-02T16:00:00+08:00</updated><author><name>Qixuan Wang</name></author><id>tag:www.wangqixuan.cn,2025-09-02:/blogs/softwares/pku_to_xmol.html</id><summary type="html">A plugin to conveniently import reagent data from reagent.pku.edu.cn into x-mol&amp;nbsp;database.</summary><content type="html">&lt;h1 id="pku_platform_to_xmol_chrome_plugin"&gt;pku_platform_to_xmol_chrome_plugin&lt;/h1&gt;
-&lt;p&gt;Conveniently import reagent data from reagent.pku.edu.cn into x-mol database.&lt;br&gt;
-&lt;a href="https://github.com/WangQixuan/pku_platform_to_xmol"&gt;(Github)&lt;/a&gt;&lt;br&gt;&amp;nbsp;使用说明：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;下载并解压&lt;/li&gt;
-&lt;li&gt;打开chrome扩展管理，开启开发者模式，加载已解压的扩展，选择解压的位置&lt;/li&gt;
-&lt;li&gt;加载扩展程序完成后，进入试剂管理平台，进入试剂详细信息的页面，多了“一键入库”按钮。如果没有的话，刷新一下就会出现&lt;/li&gt;
-&lt;li&gt;点击“一键入库”按钮，注意：进行“入库”操作前请确保已经登录x-mol并能够进入库存管理页面&lt;/li&gt;
-&lt;li&gt;点击后会跳转到添加试剂的页面，并且刚刚选择的试剂的信息已经全部自动填充，只需输入库存位置即可&lt;/li&gt;
-&lt;/ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Qixuan Wang's Personal Page - softwares</title><link href="https://www.wangqixuan.cn/" rel="alternate"/><link href="https://www.wangqixuan.cn/feeds/softwares.atom.xml" rel="self"/><id>https://www.wangqixuan.cn/</id><updated>2025-09-02T16:00:00+08:00</updated><subtitle>Qixuan Wang's Personal Page</subtitle><entry><title>PKU To Xmol Chrome Plugin</title><link href="https://www.wangqixuan.cn/blogs/softwares/pku_to_xmol.html" rel="alternate"/><published>2025-09-02T16:00:00+08:00</published><updated>2025-09-02T16:00:00+08:00</updated><author><name>Qixuan Wang</name></author><id>tag:www.wangqixuan.cn,2025-09-02:/blogs/softwares/pku_to_xmol.html</id><summary type="html">A plugin to conveniently import reagent data from reagent.pku.edu.cn into x-mol&amp;nbsp;database.</summary><content type="html">&lt;h1 id="pku-platform-to-xmol-chrome-plugin"&gt;&lt;span class="caps"&gt;PKU&lt;/span&gt; Platform to Xmol Chrome&amp;nbsp;Plugin&lt;/h1&gt;
+&lt;p&gt;Conveniently import reagent data from reagent.pku.edu.cn into x-mol database. &lt;a href="https://github.com/WangQixuan/pku_platform_to_xmol"&gt;(View in&amp;nbsp;Github)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用说明：&lt;br&gt;
+1. 下载并解压&lt;br&gt;
+2. 打开chrome扩展管理，开启开发者模式，加载已解压的扩展，选择解压的位置&lt;br&gt;
+3. 加载扩展程序完成后，进入试剂管理平台，进入试剂详细信息的页面，多了“一键入库”按钮。如果没有的话，刷新一下就会出现&lt;br&gt;
+4. 点击“一键入库”按钮，注意：进行“入库”操作前请确保已经登录x-mol并能够进入库存管理页面&lt;br&gt;
+5.&amp;nbsp;点击后会跳转到添加试剂的页面，并且刚刚选择的试剂的信息已经全部自动填充，只需输入库存位置即可&lt;/p&gt;
 &lt;p&gt;&lt;img alt="graphical abstract" src="/media/pku_to_xmol/pku_to_xmol.gif"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can download &lt;span class="caps"&gt;PKU&lt;/span&gt; reagent platform to X-mol from &lt;a href="https://github.com/WangQixuan/pku_platform_to_xmol/archive/refs/heads/main.zip"&gt;(Download from Github)&lt;/a&gt; &lt;a href="https://disk.pku.edu.cn/link/AA1288D8CDEC374A248934EEF07BE4AE28"&gt;(Download from &lt;span class="caps"&gt;PKU&lt;/span&gt;&amp;nbsp;NetDisk)&lt;/a&gt;&lt;/p&gt;
