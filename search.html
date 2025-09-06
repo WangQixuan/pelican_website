@@ -208,9 +208,10 @@ feeds/all.atom.xml"
                 <div class="tipue_search_icon">&#9906;</div>
             </button>
         </div>
+        <div data-stork="sitesearch-output"></div>
     </form>
 
-    <div data-stork="sitesearch-output"></div>
+
     <div id="tipue_search_content"></div>
 
     <!-- Google Adsense -->
@@ -275,17 +276,15 @@ feeds/all.atom.xml"
 -->
     <script type="text/javascript" src="https://www.wangqixuan.cn/theme/tipuesearch/tipuesearch.min.js"></script>
     <script type="text/javascript" src="https://www.wangqixuan.cn/theme/tipuesearch/tipuesearch.cfg.js"></script>
-    <script src="https://www.wangqixuan.cn/tipuesearch_content.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#tipue_search_input').tipuesearch();
-        });
-    </script>
     <script src="https://www.wangqixuan.cn/theme/stork/js/stork.js"></script>
+    <script src="https://www.wangqixuan.cn/tipuesearch_content.js"></script>
     <script>
         stork.initialize("https://www.wangqixuan.cn/theme/stork/js/stork.wasm")
         stork.downloadIndex("sitesearch", "https://www.wangqixuan.cn/search-index.st")
-        stork.attach("sitesearch")
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch();
+            stork.attach("sitesearch")
+        });
     </script>
 
 <script type="text/javascript" src="https://www.wangqixuan.cn/theme/style.js"></script>
