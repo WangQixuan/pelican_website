@@ -202,94 +202,122 @@ feeds/all.atom.xml"
 
                     <!-- Content -->
 <main>
-<p>/<em> 基础样式 </em>/</p>
-<h1 id="name-title_1">name-title&nbsp;{</h1>
-<div class="highlight"><pre><span></span><code><span class="nt">font-weight</span><span class="o">:</span><span class="w"> </span><span class="nt">bold</span><span class="o">;</span>
-<span class="nt">font-size</span><span class="o">:</span><span class="w"> </span><span class="nt">40px</span><span class="o">;</span>
-<span class="nt">margin-bottom</span><span class="o">:</span><span class="w"> </span><span class="nt">1rem</span><span class="o">;</span>
-</code></pre></div>
+<style>
+#name-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
 
-<p>}</p>
-<h1 id="sub-introduction_1">sub-introduction&nbsp;{</h1>
-<div class="highlight"><pre><span></span><code><span class="nt">font-size</span><span class="o">:</span><span class="w"> </span><span class="nt">22px</span><span class="o">;</span>
-<span class="nt">margin-bottom</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="p">.</span><span class="nc">5rem</span><span class="o">;</span>
-</code></pre></div>
+#sub-introduction {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
 
-<p>}</p>
-<h1 id="sub-paragraph_1">sub-paragraph&nbsp;{</h1>
-<div class="highlight"><pre><span></span><code><span class="nt">font-size</span><span class="o">:</span><span class="w"> </span><span class="nt">18px</span><span class="o">;</span>
-<span class="nt">font-style</span><span class="o">:</span><span class="w"> </span><span class="nt">italic</span><span class="o">;</span>
-<span class="nt">padding-right</span><span class="o">:</span><span class="w"> </span><span class="nt">2em</span><span class="o">;</span>
-<span class="nt">text-indent</span><span class="o">:</span><span class="w"> </span><span class="nt">1em</span><span class="o">;</span>
-<span class="nt">margin-bottom</span><span class="o">:</span><span class="w"> </span><span class="nt">2rem</span><span class="o">;</span>
-</code></pre></div>
+#sub-paragraph {
+    font-size: 18px;
+    font-style: italic;
+    padding-right: 2em;
+    text-indent: 1em;
+    margin-bottom: 2rem;
+}
 
-<p>}</p>
-<h1 id="photo-me_1">photo-me&nbsp;{</h1>
-<div class="highlight"><pre><span></span><code><span class="n">height</span><span class="o">:</span><span class="w"> </span><span class="mi">200</span><span class="n">px</span><span class="o">;</span>
-<span class="n">float</span><span class="o">:</span><span class="w"> </span><span class="n">right</span><span class="o">;</span>
-<span class="n">margin</span><span class="o">-</span><span class="n">left</span><span class="o">:</span><span class="w"> </span><span class="mf">1.5</span><span class="n">rem</span><span class="o">;</span>
-<span class="n">margin</span><span class="o">-</span><span class="n">bottom</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="n">rem</span><span class="o">;</span>
-</code></pre></div>
+#photo-me {
+    height: 200px;
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
 
-<p>}</p>
-<p>/<em> 响应式布局 </em>/<br>
-@media (max-width: 768px) {<br>
-    #photo-me {<br>
-        float: none;<br>
-        display: block;<br>
-        margin: 0 auto 1.5rem;<br>
-    }<br>&nbsp;}</p>
-<p>/<em> 列表样式 </em>/<br>
-.fa-ul li {<br>
-    line-height: 2em;<br>&nbsp;}</p>
-<p>/<em> 教育部分 </em>/</p>
-<h1 id="educations-publications">educations, #publications&nbsp;{</h1>
-<div class="highlight"><pre><span></span><code><span class="nt">margin-top</span><span class="o">:</span><span class="w"> </span><span class="nt">3rem</span><span class="o">;</span>
-<span class="nt">margin-bottom</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="p">.</span><span class="nc">5rem</span><span class="o">;</span>
-</code></pre></div>
+/* 响应式布局 */
+@media (max-width: 768px) {
+    #photo-me {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem;
+    }
+}
 
-<p>}</p>
-<p>.univ-logo {<br>
-    width: 5em;<br>
-    display: inline-block;<br>
-    margin-right: 0.5em;<br>
-    vertical-align: middle;<br>&nbsp;}</p>
-<p>.edu-section {<br>
-    margin-left: 2em;<br>
-    margin-bottom: 2.5rem;<br>&nbsp;}</p>
-<p>.edu-main {<br>
-    padding-left: 0.5em;<br>&nbsp;}</p>
-<p>.edu-sub {<br>
-    font-size: 18px;<br>
-    margin-bottom: 0.75rem;<br>&nbsp;}</p>
-<p>.social-icons .fa-icon-wrap {<br>
-    display: inline-block;<br>
-    width: 1.5em;<br>
-    text-align: center;<br>&nbsp;}</p>
-<p>.end-page {<br>
-    margin-bottom: 3rem !important;<br>&nbsp;}</p>
-<p>/<em> 链接样式 </em>/<br>
-a {<br>
-    color: #007bff;<br>
-    text-decoration: none;<br>&nbsp;}</p>
-<p>a:hover {<br>
-    text-decoration: underline;<br>&nbsp;}</p>
-<p>/<em> 浮动布局 </em>/<br>
-.float-md-right {<br>
-    float: right;<br>&nbsp;}</p>
-<p>@media (max-width: 768px) {<br>
-    .float-md-right {<br>
-        float: none;<br>
-    }<br>&nbsp;}</p>
-<p>.ml-md-3 {<br>
-    margin-left: 1rem;<br>&nbsp;}</p>
-<p>.mb-3 {<br>
-    margin-bottom: 1rem;<br>&nbsp;}</p>
-<p>.mb-4 {<br>
-    margin-bottom: 1.5rem;<br>&nbsp;}</p>
-<p>.mt-5 {<br>
-    margin-top: 3rem;<br>&nbsp;}</p>
+/* 列表样式 */
+.fa-ul li {
+    line-height: 2em;
+}
+
+/* 教育部分 */
+#educations, #publications {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.univ-logo {
+    width: 5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.edu-section {
+    margin-left: 2em;
+    margin-bottom: 2.5rem;
+}
+
+.edu-main {
+    padding-left: 0.5em;
+}
+
+.edu-sub {
+    font-size: 18px;
+    margin-bottom: 0.75rem;
+}
+
+.social-icons .fa-icon-wrap {
+    display: inline-block;
+    width: 1.5em;
+    text-align: center;
+}
+
+.end-page {
+    margin-bottom: 3rem !important;
+}
+
+/* 链接样式 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 浮动布局 */
+.float-md-right {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .float-md-right {
+        float: none;
+    }
+}
+
+.ml-md-3 {
+    margin-left: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+</style>
+
 <h3 class="mb-3" id="name-title">Qixuan&nbsp;Wang</h3>
 <p id="sub-introduction">PhD candidate, Academy for Advanced Interdisciplinary Studies, Peking University<br></p>
 <p><img alt="Profile Photo" class="img-fluid mx-auto shadow-none float-md-right ml-md-3 mb-3" id="photo-me" src="/media/about/profile.jpg"></p>
