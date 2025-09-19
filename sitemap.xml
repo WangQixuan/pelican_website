@@ -6,42 +6,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.wangqixuan.cn/</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/404.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/archives.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/author/qixuan-wang.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/authors.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/blogs/</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -62,21 +62,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.wangqixuan.cn/categories.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/category/publications.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/category/softwares.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -86,15 +86,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2025-07-07T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
-<xhtml:link rel="alternate" hreflang="en" ref="https://www.wangqixuan.cn/pages/about2.html"/>
-</url>
-
-<url>
-<loc>https://www.wangqixuan.cn/pages/about2.html</loc>
-<lastmod>2025-07-07T23:00:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link rel="alternate" hreflang="en" ref="https://www.wangqixuan.cn/pages/about.html"/>
 </url>
 
 <url>
@@ -106,28 +97,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.wangqixuan.cn/search.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/tag/plugins.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/tag/total-syntheses.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.wangqixuan.cn/tags.html</loc>
-<lastmod>2025-09-19T07:34:51-00:00</lastmod>
+<lastmod>2025-09-19T07:40:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
