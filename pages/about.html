@@ -223,8 +223,40 @@ ul.fa-ul li {
     line-height: 2em;
 }
 
-#photo-me {
+.img-wrap{
+    float:right;
+    width: 160px;
     height: 200px;
+    text-align: center;
+    margin-left:20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrap::after{
+    clear: both;
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-container .hover-img {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+}
+
+.image-container:hover .default-img {
+    opacity: 0;
 }
 
 a {
@@ -277,16 +309,6 @@ br.end-page {
     max-width: 900px;
 }
 
-.img-wrap{
-    float:right;
-    width: 160px;
-    text-align: center;
-    padding-left:20px;
-}
-.img-wrap::after{
-    clear: both;
-}
-
 .span-period{
     margin: 10px 0;
     text-align: left;
@@ -296,7 +318,8 @@ br.end-page {
 <h1 id="name-title">Qixuan&nbsp;Wang</h1>
 <p id="sub-introduction">PhD candidate, Academy for Advanced Interdisciplinary Studies, Peking University<br></p>
 <div class="img-wrap">
-    <img id="photo-me" class="img-fluid mx-auto shadow-none" src="../../media/about/profile.jpg" alt="profile.png">
+    <img id="photo-me" class="img-fluid mx-auto shadow-none default-img" src="../../media/about/profile.jpg" alt="profile.jpg">
+    <img class="img-fluid mx-auto shadow-none hover-img" src="../../media/about/profile2.jpg" alt="profile2.jpg">
 </div>
 <div class="introduction-wrap">
 <p id="sub-paragraph">My major is Integrative Life Sciences (Chemistry). I am currently involved in scientific research towards total synthesis of bioactive natural products. I have also begun preliminary explorations in developing methodologies of enzyme-catalyzed organic synthesis. Additionally, I show interest in programming (e.g., Python and C#), with exposure to areas like website development, web scraping, and desktop application design (e.g., WinForms) to support scientific work.<br></p>
