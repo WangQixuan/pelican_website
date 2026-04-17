@@ -13,6 +13,11 @@ url = "/pages/link.html"
 title = "Link"
 
 [[input.files]]
+path = "blogs/softwares/mlspm.html"
+url = "/blogs/softwares/mlspm.html"
+title = "MassLynxSampleMonitor"
+
+[[input.files]]
 path = "blogs/softwares/pku_to_xmol.html"
 url = "/blogs/softwares/pku_to_xmol.html"
 title = "PKU To Xmol Chrome Plugin"
