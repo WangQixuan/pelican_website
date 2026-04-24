@@ -14,24 +14,24 @@
 &lt;div class="math"&gt;$$v = \frac{k_2[S-L][Nu]}{K_M}$$&lt;/div&gt;
 &lt;p&gt;其中&lt;span class="math"&gt;\(K_M=K_D+\frac{k_2}{k_1}\)&lt;/span&gt;，&lt;span class="math"&gt;\(K_D=\frac{k_{-1}}{k_1}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;对于酶促反应，其主要是对组装过程进行了补偿。我们可以这样假定，如果把酶失活&amp;nbsp;(破坏二级结构)，并拆掉酶的框架，只保留残基，理论上只有残基和辅基也可以催化反应，就像有机小分子催化和仿生催化一样。但是实际上，大部分酶在失活后，或者只像反应体系添加催化残基，反应并不能正常发生，这就是因为其作为反应框架对于熵的补偿作用缺失了。为了进一步研究酶促过程，我们同样建立一个简化的组装模型：&lt;/p&gt;
-&lt;div class="math"&gt;$$[S-L] + [Nu] + [E] \stackrel{k_1}{\underset{k_{-1}}{\rightleftharpoons}} [(Nu)(S-L)(E)] \xrightarrow{k_2} [(Nu-S)(L)(E)] \stackrel{k_3}{\underset{k_{-3}}{\rightleftharpoons}} [Nu-S] + [L] + [E] $$&lt;/div&gt;
+&lt;div class="math"&gt;$$[S-L] + [Nu] + [E] \stackrel{k_1}{\underset{k_{-1}}{\rightleftharpoons}} [(Nu)(S-L)(E)] \xrightarrow{k_2} [(Nu-S)(L)(E)] \stackrel{k_3}{\underset{k_{-3}}{\rightleftharpoons}} [Nu-S] + [L] + [E]$$&lt;/div&gt;
 &lt;p&gt;在这个模型下，适用稳态近似法，由此推导的动力学方程是：&lt;/p&gt;
 &lt;div class="math"&gt;$$v = \frac{k_2 [E]_t [S-L][Nu]}{K_M + [S-L][Nu]}$$&lt;/div&gt;
 &lt;p&gt;其中&lt;span class="math"&gt;\(K_M = K_D + \frac{k_2}{k_1}\)&lt;/span&gt;，&lt;span class="math"&gt;\(K_D =&amp;nbsp;\frac{k_{-1}}{k_1}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;可以看出，相比于化学组装，酶组装一方面分子多了酶的速率项，另一方面分母多加了一个底物浓度项，用来描述酶的饱和。对比两个速率表达式，可以做出如下分析：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;底物浓度很低时候，$K_M \gg [S-L][Nu]&amp;nbsp;$，公式形式上和化学组装的一样，但是注意，各个参数的和化学组装存在本质区别&lt;/li&gt;
+&lt;li&gt;底物浓度很低时候，&lt;span class="math"&gt;\(K_M \gg [S-L][Nu]\)&lt;/span&gt;，公式形式上和化学组装的一样，但是注意，各个参数的和化学组装存在本质区别&lt;/li&gt;
 &lt;li&gt;底物将酶饱和时候，公式退化为&lt;span class="math"&gt;\(v = k_2 [E]_t\)&lt;/span&gt;，只由酶浓度控制&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;理论上，对于组装好的体系，无论是化学组装还是酶组装，&lt;span class="math"&gt;\(k_2\)&lt;/span&gt;应当几乎一样的，因为我们认为相应的催化残基等都在，催化的效果应当几乎一样。关键在&lt;span class="math"&gt;\(K_M\)&lt;/span&gt;上面，或者更确切说是&lt;span class="math"&gt;\(K_D\)&lt;/span&gt;上面。根据Eyring公式，&lt;span class="math"&gt;\(k = \frac{k_BT}{h}e^{-\frac{\Delta G^\ddagger}{RT}}\)&lt;/span&gt;，对于组装过程，我们提到几乎没有能垒，其速率就是扩散速率&lt;span class="math"&gt;\(\frac{k_BT}{h}\)&lt;/span&gt;。对大部分反应来说，其速率&lt;span class="math"&gt;\(k_2\)&lt;/span&gt;都远远小于扩散速率 (后续讨论以此假设为基础)，因此可以近似认为&lt;span class="math"&gt;\(K_M \approx K_D\)&lt;/span&gt;，也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。&lt;span class="math"&gt;\(\Delta G_{bind} = RT \ln K_D\)&lt;/span&gt;，对于化学组装过程，&lt;span class="math"&gt;\(\Delta G_{bind}\)&lt;/span&gt;几乎全部由熵进行贡献，并且由于熵减，其实本质上是负贡献的。而对于酶组装来说，除了熵的贡献外，酶的组装过程提供了一个焓减的正贡献，并且这个正的贡献远远大于熵减的负贡献，从而使得酶组装过程&lt;span class="math"&gt;\(K_M\)&lt;/span&gt;远远小于化学组装过程。&lt;/p&gt;
 &lt;p&gt;进一步描述，我们可以把酶组装过程拆解成两个热力学过程，由于热力学和路径无关，并且前文提到了整个过程无能垒，这个拆分分析是合理的：&lt;/p&gt;
-&lt;div class="math"&gt;$$[S-L] + [Nu] \stackrel{K_{D,chem}}{\rightleftharpoons} [(Nu)(S-L)] $$&lt;/div&gt;
+&lt;div class="math"&gt;$$[S-L] + [Nu] \stackrel{K_{D,chem}}{\rightleftharpoons} [(Nu)(S-L)]$$&lt;/div&gt;
 &lt;p&gt;&lt;br&gt;
 &lt;/p&gt;
-&lt;div class="math"&gt;$$[(Nu)(S-L)] + [E] \stackrel{K_{D,conf}}{\rightleftharpoons} [(Nu-S)(L)(E)] $$&lt;/div&gt;
-&lt;p&gt;则有&lt;span class="math"&gt;\(K_{D,enzyme} = K_{D, chem} K_{D,conf}\)&lt;/span&gt;，其中&lt;span class="math"&gt;\(K_{D, chem} = e^{-\frac{\Delta G_{chem}}{RT}} = e^{-\frac{\Delta H_{chem}-T\Delta S_{chem}}{RT}} $，\)&lt;/span&gt;K_{D, conf} = e^{-\frac{\Delta G_{conf}}{&lt;span class="caps"&gt;RT&lt;/span&gt;}} = e^{-\frac{\Delta H_{conf}-T\Delta S_{conf}}{&lt;span class="caps"&gt;RT&lt;/span&gt;}} &lt;span class="math"&gt;\(，按照这样理解，\)&lt;/span&gt;\Delta H_{chem}&lt;span class="math"&gt;\(影响很小，但是\)&lt;/span&gt;\Delta H_{conf}&lt;span class="math"&gt;\(影响很大，酶组装过程多了一个\)&lt;/span&gt;K_{D,conf}&lt;span class="math"&gt;\(的影响，本质上是多了一个极大的\)&lt;/span&gt;\Delta H_{conf}&lt;span class="math"&gt;\(的正向影响，和一个较小的\)&lt;/span&gt;\Delta S_{conf}&lt;span class="math"&gt;\(的负向影响，净结果使得\)&lt;/span&gt;K_{D,conf}&lt;span class="math"&gt;\(极小，从而相比于\)&lt;/span&gt;K_{D,chem}&lt;span class="math"&gt;\(来说，\)&lt;/span&gt;K_{D,enzyme}$被很大程度上拉低了。这也就是酶对反应能够产生极大催化作用的根本所在。所谓的催化残基等的影响，其实都是可以通过有机小分子催化或者仿生催化进行模拟的，唯独这个框架的组装过程对整个反应的影响，也就是通过组装焓对组装熵的弥补，导致了对整个反应极大的催化作用。&lt;/p&gt;
+&lt;div class="math"&gt;$$[(Nu)(S-L)] + [E] \stackrel{K_{D,conf}}{\rightleftharpoons} [(Nu-S)(L)(E)]$$&lt;/div&gt;
+&lt;p&gt;则有&lt;span class="math"&gt;\(K_{D,enzyme} = K_{D, chem} K_{D,conf}\)&lt;/span&gt;，其中&lt;span class="math"&gt;\(K_{D, chem} = e^{-\frac{\Delta G_{chem}}{RT}} = e^{-\frac{\Delta H_{chem}-T\Delta S_{chem}}{RT}}\)&lt;/span&gt;，&lt;span class="math"&gt;\(K_{D, conf} = e^{-\frac{\Delta G_{conf}}{RT}} = e^{-\frac{\Delta H_{conf}-T\Delta S_{conf}}{RT}}\)&lt;/span&gt;，按照这样理解，&lt;span class="math"&gt;\(\Delta H_{chem}\)&lt;/span&gt;影响很小，但是&lt;span class="math"&gt;\(\Delta H_{conf}\)&lt;/span&gt;影响很大，酶组装过程多了一个&lt;span class="math"&gt;\(K_{D,conf}\)&lt;/span&gt;的影响，本质上是多了一个极大的&lt;span class="math"&gt;\(\Delta H_{conf}\)&lt;/span&gt;的正向影响，和一个较小的&lt;span class="math"&gt;\(\Delta S_{conf}\)&lt;/span&gt;的负向影响，净结果使得&lt;span class="math"&gt;\(K_{D,conf}\)&lt;/span&gt;极小，从而相比于&lt;span class="math"&gt;\(K_{D,chem}\)&lt;/span&gt;来说，&lt;span class="math"&gt;\(K_{D,enzyme}\)&lt;/span&gt;被很大程度上拉低了。这也就是酶对反应能够产生极大催化作用的根本所在。所谓的催化残基等的影响，其实都是可以通过有机小分子催化或者仿生催化进行模拟的，唯独这个框架的组装过程对整个反应的影响，也就是通过组装焓对组装熵的弥补，导致了对整个反应极大的催化作用。&lt;/p&gt;
 &lt;p&gt;进一步，我们可以对速率进行拆解，得到一个相对于化学反应的酶催化速率促进的系数：&lt;/p&gt;
-&lt;div class="math"&gt;$$v_{enzyme} = \frac{[E]_t}{K_{D,conf}+\frac{[S-L][Nu]}{K_{D,chem}}} v_{chem} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$v_{enzyme} = \frac{[E]_t}{K_{D,conf}+\frac{[S-L][Nu]}{K_{D,chem}}} v_{chem}$$&lt;/div&gt;
 &lt;p&gt;这样，可以清晰表示酶浓度影响 (&lt;span class="math"&gt;\([E]_t\)&lt;/span&gt;)，酶组装影响 (&lt;span class="math"&gt;\(K_{D,conf}\)&lt;/span&gt;) 和酶饱和影响 (&lt;span class="math"&gt;\(\frac{[S-L][Nu]}{K_{D,chem}}\)&lt;/span&gt;)&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
