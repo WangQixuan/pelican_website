@@ -13,11 +13,6 @@ url = "/pages/link.html"
 title = "Link"
 
 [[input.files]]
-path = "blogs/articles/some_understandings_on_enzymatic_reaction.html"
-url = "/blogs/articles/some_understandings_on_enzymatic_reaction.html"
-title = "Some Understandings on Enzymatic Reaction Kinetics and Thermodynamics"
-
-[[input.files]]
 path = "blogs/softwares/mlspm.html"
 url = "/blogs/softwares/mlspm.html"
 title = "MassLynxSampleMonitor"
