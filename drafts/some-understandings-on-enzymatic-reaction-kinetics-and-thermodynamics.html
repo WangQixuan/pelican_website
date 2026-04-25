@@ -259,7 +259,7 @@ feeds/articles.atom.xml"
 
         <!-- Article -->
         <div>
-            <h2 id="_1">对酶促反应动力学和热力学的一些理解</h2>
+            <h2 id="_1">基于组装理论对酶促反应动力学和热力学的一些理解</h2>
 <p>通常我们认为，酶在催化一个反应中存在三种作用：</p>
 <ul>
 <li>提供一个框架&nbsp;(scaffold)，用来固定各个反应物</li>
@@ -283,7 +283,7 @@ feeds/articles.atom.xml"
 <li>底物浓度很低时候，<span class="math">\(K_M \gg [S-L][Nu]\)</span>，公式形式上和化学组装的一样，但是注意，各个参数的和化学组装存在本质区别</li>
 <li>底物将酶饱和时候，公式退化为<span class="math">\(v = k_2 [E]_t\)</span>，只由酶浓度控制</li>
 </ul>
-<p>理论上，对于组装好的体系，无论是化学组装还是酶组装，<span class="math">\(k_2\)</span>应当几乎一样的。因为我们认为对于有机小分子催化，相应的催化残基等都在，催化的效果应当几乎一样。关键在<span class="math">\(K_M\)</span>上面，或者更确切说是<span class="math">\(K_D\)</span>上面。根据Eyring公式，<span class="math">\(k = \frac{k_BT}{h}e^{-\frac{\Delta G^\ddagger}{RT}}\)</span>，对于组装过程，我们提到几乎没有能垒，其速率就是扩散速率<span class="math">\(\frac{k_BT}{h}\)</span>。对大部分反应来说，其速率<span class="math">\(k_2\)</span>都远远小于扩散速率 (后续讨论以此假设为基础)，因此可以近似认为<span class="math">\(K_M \approx K_D\)</span>，也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。<span class="math">\(\Delta G_{bind} = \Delta H_{bind} -T\Delta S_{bind} = RT \ln K_D\)</span>。(注意<span class="math">\(\Delta G_{bind}\)</span>对应的是组装过程自由能变，而<span class="math">\(K_D\)</span>是解离的平衡常数)</p>
+<p>理论上，对于组装好的体系，无论是化学组装还是酶组装，<span class="math">\(k_2\)</span>应当几乎一样的。因为我们认为对于有机小分子催化，相应的催化残基等都在，那些催化残基可以组装到和酶里面一样来催化反应，催化的效果应当几乎一样。关键在<span class="math">\(K_M\)</span>上面，或者更确切说是<span class="math">\(K_D\)</span>上面。根据Eyring公式，<span class="math">\(k = \frac{k_BT}{h}e^{-\frac{\Delta G^\ddagger}{RT}}\)</span>，对于组装过程，我们提到几乎没有能垒，其速率就是扩散速率<span class="math">\(\frac{k_BT}{h}\)</span>。对大部分反应来说，其速率<span class="math">\(k_2\)</span>都远远小于扩散速率 (后续讨论以此假设为基础)，因此可以近似认为<span class="math">\(K_M \approx K_D\)</span>，也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。<span class="math">\(\Delta G_{bind} = \Delta H_{bind} -T\Delta S_{bind} = RT \ln K_D\)</span>。(注意<span class="math">\(\Delta G_{bind}\)</span>对应的是组装过程自由能变，而<span class="math">\(K_D\)</span>是解离的平衡常数)</p>
 <p>对于有机小分子催化的反应，也就是前面假设的，假设酶失活并且残基从主链脱离，作为有机小分子催化反应。如果需要引入这些催化残基，需要一个额外的组装熵的判罚。而对于酶催化反应而言，这些催化基团是被酶的高级结构预组装的，只需要底物分子组装到酶口袋即可。相比于化学组装，酶对催化残基的预组装能够有效降低组装过程的熵减判罚。此外，酶对底物的一些额外的非催化相互作用还能从焓的角度进行补偿，这使得<span class="math">\(\Delta G_{bind,enzyme} \ll \Delta G_{bind,chem}\)</span>，因此<span class="math">\(K_{D,enzyme} \ll K_{D,chem}\)</span>。而对于有机小分子催化，如果需要引入催化残基，需要额外付出很多熵罚，而实际上付出的熵罚很可能比其对后续催化过程还要显著，从而导致其并不能有效发挥小分子催化作用。</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
