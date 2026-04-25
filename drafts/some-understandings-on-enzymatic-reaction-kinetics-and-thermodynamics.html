@@ -235,7 +235,7 @@ feeds/articles.atom.xml"
                             Apr 24, 2026
                     </span>
                 </span>
-                    <span class="card-link text-secondary" title="~131 words">1 mins</span>
+                    <span class="card-link text-secondary" title="~134 words">1 mins</span>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 text-right" style="padding: 0">
                 <a class="badge badge-success" href="https://www.wangqixuan.cn/category/articles.html">articles</a>
@@ -284,8 +284,8 @@ feeds/articles.atom.xml"
 <p>理论上，对于组装好的体系，无论是化学组装还是酶组装，<span class="math">\(k_2\)</span>应当几乎一样的。因为我们认为对于有机小分子催化，相应的催化残基等都在，那些催化残基可以组装到和酶里面一样来催化反应，催化的效果应当几乎一样。关键在<span class="math">\(K_M\)</span>上面，或者更确切说是<span class="math">\(K_D\)</span>上面。也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。<span class="math">\(\Delta G_{bind} = \Delta H_{bind} -T\Delta S_{bind} = RT \ln K_D\)</span>。(注意<span class="math">\(\Delta G_{bind}\)</span>对应的是组装过程自由能变，而<span class="math">\(K_D\)</span>是解离的平衡常数)</p>
 <p>对于有机小分子催化的反应，也就是前面假设的，假设酶失活并且残基从主链脱离，作为有机小分子催化反应。如果需要引入这些催化残基，需要一个额外的组装熵的判罚。而对于酶催化反应而言，这些催化基团是被酶的高级结构预组装的，只需要底物分子组装到酶口袋即可。相比于化学组装，酶对催化残基的预组装能够有效降低组装过程的熵减判罚。此外，酶对底物的一些额外的非催化相互作用还能从焓的角度进行补偿，这使得<span class="math">\(\Delta G_{bind,enzyme} \ll \Delta G_{bind,chem}\)</span>，因此<span class="math">\(K_{D,enzyme} \ll K_{D,chem}\)</span>。而对于有机小分子催化，如果需要引入催化残基，需要额外付出很多熵罚，而实际上付出的熵罚很可能比其对后续催化过程还要显著，从而导致其并不能有效发挥小分子催化作用。</p>
 <p>如果将前面提到的所有浓度按照标准态去除量纲，作为无量纲相对浓度，则进一步根据<span class="math">\(\Delta G = -RTlnK\)</span>，可以得到动力学速率和各个自由能变的关系：</p>
-<div class="math">$$v=e^{-\frac{\Delta G_2 - \Delta G_{bind,reactant}}{RT}} a_{[Nu]} a_{[S-L]} a_{[E]_t} \frac{1}{1+a_{[Nu]} a_{[S-L]} e^{\frac{\Delta G_{bind,reactant}}{RT}}+a_{[P]}e^{\frac{\Delta G_{bind,product}}{RT}}}$$</div>
-<p>对于一个催化反应，我们先不考虑催化剂饱和和产物抑制，也就是认为浓度很稀产物很少时候，此时后面的修饰项为1。其能够有效引入催化作用的判据为，<span class="math">\(e^{- \frac{\Delta G _{2,catalysis} - \Delta G _{bind,reactant,catalysis}}{RT}} + ln(a_{[E]t}) &gt; e^{- \frac{\Delta G _{2,noncatalysis} - \Delta G _{bind,reactant,noncatalysis}}{RT}}\)</span>即<span class="math">\(\Delta \Delta G _2 + RTln(a_{[E]t}) &gt; \Delta \Delta G _{bind,reactant}\)</span> (按照非催化减催化计算)。也就是说，引入催化作用带来的活化自由能变收益，必须大于因为引入催化作用带来的额外的组装作用的负收益。对于许多酶反应来说，由于底物和酶非常契合，<span class="math">\(\Delta G_{bind,reactant,catalysis}\)</span>甚至是负值。相比于有机小分子催化反应，酶引入的很多非催化相互作用也正是为了降低<span class="math">\(\Delta G_{bind}\)</span>。</p>
+<div class="math">$$v=e^{-\frac{\Delta G^\ddagger_2 - \Delta G_{bind,reactant}}{RT}} a_{[Nu]} a_{[S-L]} a_{[E]_t} \frac{1}{1+a_{[Nu]} a_{[S-L]} e^{\frac{\Delta G_{bind,reactant}}{RT}}+a_{[P]}e^{\frac{\Delta G_{bind,product}}{RT}}}$$</div>
+<p>对于一个催化反应，我们先不考虑催化剂饱和和产物抑制，也就是认为浓度很稀产物很少时候，此时后面的修饰项为1。其能够有效引入催化作用的判据为，<span class="math">\(e^{- \frac{\Delta G ^\ddagger _{2,catalysis} - \Delta G _{bind,reactant,catalysis}}{RT}} + ln(a_{[E]t}) &gt; e^{- \frac{\Delta G ^\ddagger _{2,noncatalysis} - \Delta G _{bind,reactant,noncatalysis}}{RT}}\)</span>即<span class="math">\(\Delta \Delta G ^\ddagger _2 + RTln(a_{[E]t}) &gt; \Delta \Delta G _{bind,reactant}\)</span> (按照非催化减催化计算)。也就是说，引入催化作用带来的活化自由能变收益，必须大于因为引入催化作用带来的额外的组装作用的负收益。对于许多酶反应来说，由于底物和酶非常契合，<span class="math">\(\Delta G_{bind,reactant,catalysis}\)</span>甚至是负值。相比于有机小分子催化反应，酶引入的很多非催化相互作用也正是为了降低<span class="math">\(\Delta G_{bind}\)</span>。</p>
 <p>需要再次强调的是，本文并不是说酶催化的最重要的因素在于预组装。实际上，酶的主要催化作用还是来自于其残基通过一些催化相互作用，降低反应本身的活化能，组装作用是次要的。而本文旨在说明的是，这些催化相互作用所依赖的残基，在脱离酶的框架以后，也就是有机小分子催化中，理论上也能够实现其催化效果。但是实际上，由于缺乏预组装过程，这些作用很难在实际上成功作用到反应中，而预组装理论正是为了统一解释有机小分子催化和酶催化而提出的，其结论就是，酶通过高效的预组装过程，降低了引入这些催化作用带来的负面影响，从而实现远远比有机小分子催化更加高效的效果。</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
