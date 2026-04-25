@@ -235,7 +235,7 @@ feeds/articles.atom.xml"
                             Apr 24, 2026
                     </span>
                 </span>
-                    <span class="card-link text-secondary" title="~74 words">1 mins</span>
+                    <span class="card-link text-secondary" title="~131 words">1 mins</span>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 text-right" style="padding: 0">
                 <a class="badge badge-success" href="https://www.wangqixuan.cn/category/articles.html">articles</a>
@@ -267,24 +267,26 @@ feeds/articles.atom.xml"
 <li>有一些关键的残基或者辅基直接参与催化反应，例如巯基在一些需要亲核催化的反应中，以及例如FMN等辅基直接参与氧化还原反应</li>
 </ul>
 <p>其中，后两者基本可以通过有机小分子催化/仿生催化进行模拟，而实际上真正赋予酶“魔法”的，是第一点，它能够提供一个容纳反应的框架，创造一个独特的催化微环境促进反应的进行。本文讨论的是基于对酶催化反应和有机小分子催化反应的对比。</p>
-<p>我们以最简单的<span class="math">\(S_N2\)</span>亲核取代反应为例。为了进一步分析这一点，我们需要创建一个统一的理论，用来统一解释常规的非酶促反应，和酶促反应。常规的<span class="math">\(S_N2\)</span>反应是二级动力学，但是酶促反应在进行底物和酶组装以后，实际上已经变成了一个分子内的反应。为了统一这一点，我们可以大胆假定，对于多级动力学的基元反应，将其视作一个事前的“底物组装”过程加一个一级动力学过程，类似于酶促反应里面的酶和底物进行组装的过程。</p>
+<p>我们以最简单的<span class="math">\(S_N2\)</span>亲核取代反应为例。为了进一步分析这一点，我们需要创建一个统一的理论，用来统一解释常规的非酶促反应，和酶促反应。常规的<span class="math">\(S_N2\)</span>反应是二级动力学，但是酶促反应在进行底物和酶组装以后，实际上已经变成了一个分子内的反应。为了统一这一点，我们可以大胆假定，对于多级动力学的基元反应，将其视作一个事前的“底物组装”过程加一个一级动力学过程，类似于酶促反应里面的酶和底物进行组装的过程：</p>
 <div class="math">$$[S-L] + [Nu] \stackrel{k_1}{\underset{k_{-1}}{\rightleftharpoons}} [(Nu)(S-L)] \xrightarrow{k_2} [Nu-S] + [L]$$</div>
-<p>从反应的过渡态开始向反应坐标向前拉取IRC，一直到两个反应分子完全自由状态，分析从自由状态到过渡态的过程。如果将自由状态的焓认为是零点，那么从组装好以后开始，分子构象基本是固定的，到过渡态的过程可能有构象的微小变化，导致熵会有微小的变化，但是主要的自由能变是由焓变贡献的，因此这个过程焓一定是增加的。但是从自由态到组装态的过程，焓可能没什么大变化，对于酶促反应甚至还会降低。但是对于熵，组装过程是会大幅度熵减的。实际上，组装过程可以看成是几乎没有过渡态 (能垒极低) 的，自由能增加的过程，其是整个反应过程由熵驱动的自由能变的主要贡献步，而组装好以后到过渡态的<span class="math">\(S_N2\)</span>亲核取代过程是由焓驱动的自由能变的主要贡献步。</p>
-<p>在这个模型下，适用稳态近似法，由此推导的动力学方程是：</p>
+<p>上面的公式描述的是没有任何催化剂的情况下的动力学过程。从反应的过渡态开始向反应坐标向前拉取IRC，一直到两个反应分子完全自由状态，分析从自由状态到过渡态的过程。如果将自由状态的焓认为是零点，那么从组装好以后开始，分子构象基本是固定的，到过渡态的过程可能有构象的微小变化，导致熵会有微小的变化，但是主要的自由能变是由焓变贡献的，因此这个过程焓一定是增加的。但是从自由态到组装态的过程，焓可能没什么大变化，对于酶促反应甚至还会降低。但是对于熵，组装过程是会大幅度熵减的。实际上，组装过程可以看成是几乎没有过渡态 (能垒极低) 的，自由能增加的过程，其是整个反应过程由熵驱动的自由能变的主要贡献步，而组装好以后到过渡态的<span class="math">\(S_N2\)</span>亲核取代过程是由焓驱动的自由能变的主要贡献步。</p>
+<p>在这个模型下，适用稳态近似法，由此推导的动力学方程是&nbsp;(暂时忽略产物抑制，后面会重新推导)：</p>
 <div class="math">$$v = \frac{k_2[S-L][Nu]}{K_M}$$</div>
 <p>其中<span class="math">\(K_M=K_D+\frac{k_2}{k_1}\)</span>，<span class="math">\(K_D=\frac{k_{-1}}{k_1}\)</span></p>
 <p>对于酶促反应，其主要是对组装过程进行了补偿。我们可以这样假定，如果把酶失活&nbsp;(破坏二级结构)，并拆掉酶的框架，只保留残基，理论上只有残基和辅基也可以催化反应，就像有机小分子催化和仿生催化一样。但是实际上，大部分酶在失活后，或者只像反应体系添加催化残基，反应并不能正常发生，这就是因为其作为反应框架对于熵的补偿作用缺失了。为了进一步研究酶促过程，我们同样建立一个简化的组装模型：</p>
 <div class="math">$$[S-L] + [Nu] + [E] \stackrel{k_1}{\underset{k_{-1}}{\rightleftharpoons}} [(Nu)(S-L)(E)] \xrightarrow{k_2} [(Nu-S)(L)(E)] \stackrel{k_3}{\underset{k_{-3}}{\rightleftharpoons}} [Nu-S] + [L] + [E]$$</div>
 <p>在这个模型下，适用稳态近似法，由此推导的动力学方程是：</p>
-<div class="math">$$v = \frac{k_2 [E]_t [S-L][Nu]}{K_M + [S-L][Nu]}$$</div>
-<p>其中<span class="math">\(K_M = K_D + \frac{k_2}{k_1}\)</span>，<span class="math">\(K_D =&nbsp;\frac{k_{-1}}{k_1}\)</span></p>
-<p>可以看出，相比于化学组装，酶组装一方面分子多了酶的速率项，另一方面分母多加了一个底物浓度项，用来描述酶的饱和。对比两个速率表达式，可以做出如下分析：</p>
-<ul>
-<li>底物浓度很低时候，<span class="math">\(K_M \gg [S-L][Nu]\)</span>，公式形式上和化学组装的一样，但是注意，各个参数的和化学组装存在本质区别</li>
-<li>底物将酶饱和时候，公式退化为<span class="math">\(v = k_2 [E]_t\)</span>，只由酶浓度控制</li>
-</ul>
-<p>理论上，对于组装好的体系，无论是化学组装还是酶组装，<span class="math">\(k_2\)</span>应当几乎一样的。因为我们认为对于有机小分子催化，相应的催化残基等都在，那些催化残基可以组装到和酶里面一样来催化反应，催化的效果应当几乎一样。关键在<span class="math">\(K_M\)</span>上面，或者更确切说是<span class="math">\(K_D\)</span>上面。根据Eyring公式，<span class="math">\(k = \frac{k_BT}{h}e^{-\frac{\Delta G^\ddagger}{RT}}\)</span>，对于组装过程，我们提到几乎没有能垒，其速率就是扩散速率<span class="math">\(\frac{k_BT}{h}\)</span>。对大部分反应来说，其速率<span class="math">\(k_2\)</span>都远远小于扩散速率 (后续讨论以此假设为基础)，因此可以近似认为<span class="math">\(K_M \approx K_D\)</span>，也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。<span class="math">\(\Delta G_{bind} = \Delta H_{bind} -T\Delta S_{bind} = RT \ln K_D\)</span>。(注意<span class="math">\(\Delta G_{bind}\)</span>对应的是组装过程自由能变，而<span class="math">\(K_D\)</span>是解离的平衡常数)</p>
+<div class="math">$$v = \frac{k_2 [E]_t [Nu] [S-L]}{K_M + \frac{k_2 + k_3}{k_3} [Nu] [S-L] + \frac{K_M}{K_{D'}} [P]}$$</div>
+<p>其中<span class="math">\(K_M = K_D + \frac{k_2}{k_1}\)</span>，<span class="math">\(K_D = \frac{k_{-1}}{k_1}\)</span>，<span class="math">\(K_{D'}=\frac{k_3}{k_{-3}}\)</span>；<span class="math">\(K_D\)</span>是反应复合物的解离常数，<span class="math">\(K_{D'}\)</span>是产物复合物的解离常数</p>
+<p>根据Eyring公式，<span class="math">\(k = \frac{k_BT}{h}e^{-\frac{\Delta G^\ddagger}{RT}}\)</span>。对于一般反应来说，组装和解组装过程速率都是很快的，我们提到几乎没有能垒，其速率就是扩散速率<span class="math">\(\frac{k_BT}{h}\)</span>。对大部分反应来说，其速率<span class="math">\(k_2\)</span>都远远小于扩散速率 (后续讨论以此假设为基础)，因此可以近似认为<span class="math">\(K_M \approx K_D\)</span>，则有：</p>
+<div class="math">$$v = \frac{k_2 [E]_t [Nu] [S-L]}{K_D + [Nu] [S-L] + \frac{K_D}{K_{D'}} [P]} = \frac{k_2[S-L][Nu][E]_t}{K_D} \frac{1}{1+\frac{[Nu][S-L]}{K_D}+\frac{[P]}{K_{D'}}}$$</div>
+<p>可以看出，相比于化学组装，酶组装一方面分子多了酶的速率项，另一方面分母多加了一个底物浓度项，用来描述酶的饱和；以及产物浓度项，用来描述酶的抑制。注意这个公式不只是适用于酶催化体系，也同样适用于小分子催化体系。</p>
+<p>理论上，对于组装好的体系，无论是化学组装还是酶组装，<span class="math">\(k_2\)</span>应当几乎一样的。因为我们认为对于有机小分子催化，相应的催化残基等都在，那些催化残基可以组装到和酶里面一样来催化反应，催化的效果应当几乎一样。关键在<span class="math">\(K_M\)</span>上面，或者更确切说是<span class="math">\(K_D\)</span>上面。也就是说，酶对反应的促进作用实际上来自于组装过程热力学稳定性的影响。<span class="math">\(\Delta G_{bind} = \Delta H_{bind} -T\Delta S_{bind} = RT \ln K_D\)</span>。(注意<span class="math">\(\Delta G_{bind}\)</span>对应的是组装过程自由能变，而<span class="math">\(K_D\)</span>是解离的平衡常数)</p>
 <p>对于有机小分子催化的反应，也就是前面假设的，假设酶失活并且残基从主链脱离，作为有机小分子催化反应。如果需要引入这些催化残基，需要一个额外的组装熵的判罚。而对于酶催化反应而言，这些催化基团是被酶的高级结构预组装的，只需要底物分子组装到酶口袋即可。相比于化学组装，酶对催化残基的预组装能够有效降低组装过程的熵减判罚。此外，酶对底物的一些额外的非催化相互作用还能从焓的角度进行补偿，这使得<span class="math">\(\Delta G_{bind,enzyme} \ll \Delta G_{bind,chem}\)</span>，因此<span class="math">\(K_{D,enzyme} \ll K_{D,chem}\)</span>。而对于有机小分子催化，如果需要引入催化残基，需要额外付出很多熵罚，而实际上付出的熵罚很可能比其对后续催化过程还要显著，从而导致其并不能有效发挥小分子催化作用。</p>
+<p>如果将前面提到的所有浓度按照标准态去除量纲，作为无量纲相对浓度，则进一步根据<span class="math">\(\Delta G = -RTlnK\)</span>，可以得到动力学速率和各个自由能变的关系：</p>
+<div class="math">$$v=e^{-\frac{\Delta G_2 - \Delta G_{bind,reactant}}{RT}} a_{[Nu]} a_{[S-L]} a_{[E]_t} \frac{1}{1+a_{[Nu]} a_{[S-L]} e^{\frac{\Delta G_{bind,reactant}}{RT}}+a_{[P]}e^{\frac{\Delta G_{bind,product}}{RT}}}$$</div>
+<p>对于一个催化反应，我们先不考虑催化剂饱和和产物抑制，也就是认为浓度很稀产物很少时候，此时后面的修饰项为1。其能够有效引入催化作用的判据为，<span class="math">\(e^{- \frac{\Delta G _{2,catalysis} - \Delta G _{bind,reactant,catalysis}}{RT}} + ln(a_{[E]t}) &gt; e^{- \frac{\Delta G _{2,noncatalysis} - \Delta G _{bind,reactant,noncatalysis}}{RT}}\)</span>即<span class="math">\(\Delta \Delta G _2 + RTln(a_{[E]t}) &gt; \Delta \Delta G _{bind,reactant}\)</span> (按照非催化减催化计算)。也就是说，引入催化作用带来的活化自由能变收益，必须大于因为引入催化作用带来的额外的组装作用的负收益。对于许多酶反应来说，由于底物和酶非常契合，<span class="math">\(\Delta G_{bind,reactant,catalysis}\)</span>甚至是负值。相比于有机小分子催化反应，酶引入的很多非催化相互作用也正是为了降低<span class="math">\(\Delta G_{bind}\)</span>。</p>
+<p>需要再次强调的是，本文并不是说酶催化的最重要的因素在于预组装。实际上，酶的主要催化作用还是来自于其残基通过一些催化相互作用，降低反应本身的活化能，组装作用是次要的。而本文旨在说明的是，这些催化相互作用所依赖的残基，在脱离酶的框架以后，也就是有机小分子催化中，理论上也能够实现其催化效果。但是实际上，由于缺乏预组装过程，这些作用很难在实际上成功作用到反应中，而预组装理论正是为了统一解释有机小分子催化和酶催化而提出的，其结论就是，酶通过高效的预组装过程，降低了引入这些催化作用带来的负面影响，从而实现远远比有机小分子催化更加高效的效果。</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
